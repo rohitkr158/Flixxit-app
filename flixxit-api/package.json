@@ -1,0 +1,25 @@
+{
+  "name": "flixxit-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "flixxit-ui": "npm start --prefix ./flixxit-ui",
+    "dev": "concurrently \"npm start\" \"npm run flixxit-ui\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1"
+  }
+}
